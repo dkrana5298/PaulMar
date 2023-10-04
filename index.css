@@ -4,9 +4,9 @@ body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
-body {
+/* body {
   background-image: url('./body1.jpg');
-}
+} */
 
 .timer {
     background-color: #85adad;
@@ -104,7 +104,70 @@ button {
   from {opacity: .4} 
   to {opacity: 1}
 }
-/* On smaller screens, decrease text size
-@media only screen and (max-width: 300px) {
-  .prev, .next {font-size: 11px}
-} */
+ul {
+  list-style: none;
+}
+li {
+  display: inline;
+  background-color: #0099e6;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 40px;
+}
+.nav {
+  margin: 20px 10px;
+}
+.searc {
+    float: right;
+    margin-right: 20px;
+}
+.searcinput {
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+.src {
+  cursor: pointer;
+}
+.para1 {
+  padding: 20px;
+  margin-top: 70px;
+  font-size: 30px;
+}
+.para {
+  padding: 20px;
+  font-size: 30px;
+}
+
+@media  only screen and (min-width:300px) and (max-width:768px){
+  li {
+    display: block;
+    background-color: #0099e6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size:15px;
+  }
+  .searcinput {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    width: 60%;
+  }
+  .searc {
+    float: right;
+    margin-right: 10px;
+}
+.para1 {
+  padding: 20px;
+  font-size: 20px;
+}
+.para {
+  padding: 20px;
+  font-size: 20px;
+}
+
+}
