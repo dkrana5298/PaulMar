@@ -140,7 +140,6 @@ li {
   padding: 20px;
   font-size: 30px;
 }
-
 @media  only screen and (min-width:300px) and (max-width:768px){
   ul {
     margin: 10px;
@@ -163,7 +162,7 @@ li {
   }
   .searc {
     float: left;
-    mmargin-right: 15px;
+    margin-right: 15px;
     margin-left: 8px;
     width: 95%;
 }
@@ -175,5 +174,6 @@ li {
   padding: 20px;
   font-size: 20px;
 }
-
 }
+
+ 
