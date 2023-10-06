@@ -1,5 +1,3 @@
-let slideIndex = 1;
-showSlides(slideIndex);
 let date=new Date()
 console.log(date.toDateString())
 console.log(date.toTimeString())
@@ -44,9 +42,6 @@ function startTimer(){
         minute=0;
         minuteCount.innerHTML= "0" + minute;
      }
-    //  if(hour > 9){
-    //     hourCount.innerHTML= hour;
-    //  }
      if(hour < 10){
       hourCount.innerHTML= "0" + hour;
      }
@@ -56,15 +51,21 @@ function startTimer(){
      if(hour > 12){
       hourCount.innerHTML= "0" + hour - 12;
      }
-
   }
-
+let slideIndex = 1;
+showSlides(slideIndex);
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
 }
 // password view function
 function PasswordViwe(){
@@ -76,18 +77,3 @@ function PasswordViwe(){
       pass.type="password"
     }
  } 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-//   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-  slides[slideIndex-1].style.display = "block";  
-//   dots[slideIndex-1].className += " active";
-}
