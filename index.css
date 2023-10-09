@@ -178,5 +178,35 @@ li {
   font-size: 20px;
 }
 }
-
+@media  only screen and (min-width:768px) and (max-width:1024px){
+  li {
+    display: inline;
+    background-color: #0099e6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 25px;   
+  }
+  .searcinput {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    width: 70%;
+  }
+  .searc {
+    float: right;
+    margin-right: 10px;
+    /* margin-left: 8px; */
+    width: 50%;
+}
+  .para1 {
+    padding: 20px;
+    font-size: 22px;
+  }
+  .para {
+    padding: 20px;
+    font-size: 22px;
+  }
+}
  
