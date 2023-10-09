@@ -49,7 +49,7 @@ function startTimer(){
         hourCount.innerHTML= hour;
       }
      if(hour > 12){
-      hourCount.innerHTML= "0" + hour - 12;
+      hourCount.innerHTML= "0" + (hour - 12);
      }
   }
 let slideIndex = 1;
